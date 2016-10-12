@@ -5,15 +5,23 @@
 
 
 class Lottery
-
-  def initialize
-  end
-
-  def method_name
-    
+  def initialize(num)
+	 gifts ={
+	  '1' =>'car',
+	  '2' =>'bike',
+	  '3' =>'iphone',
+	  '4' =>'washing machine',
+	  '5' =>'refrigerator',
+	  '6' =>'cycle',
+	  '7' =>'owen',
+	  '8' =>'1gm-gold',
+	  '9' =>'1gm-silver',
+	  '10' =>'500rs voucher'
+	  }
+	  puts gifts[num]
   end
 end
 
-number = 'Inut From the user'
-prize = Lottery.new(number)
-puts prize
+puts 'Inut From the user'
+x=gets.chomp
+prize = Lottery.new(x)
